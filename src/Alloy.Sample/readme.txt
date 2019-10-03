@@ -1,1 +1,3 @@
-Allow to download media folder as ZIP file.
+Extension that allows to download media folder as ZIP file.
+
+To start using it, no configuration is required.
