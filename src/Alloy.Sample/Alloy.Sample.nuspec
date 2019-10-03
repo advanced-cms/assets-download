@@ -13,7 +13,7 @@
     <tags>episerver media</tags>
     <license type="expression">Apache-2.0</license>
     <iconUrl>https://raw.githubusercontent.com/advanced-cms/advanced-reviews/master/assets/logo.png</iconUrl>
-    <projectUrl>https://github.com/advanced-cms/media-download</projectUrl>
+    <projectUrl>https://github.com/advanced-cms/assets-download</projectUrl>
     <dependencies>
       <dependency id="EPiServer.CMS.Core" version="[11.11.3,12.0)" />
       <dependency id="EPiServer.CMS.UI" version="[11.19.1,12.0)" />
