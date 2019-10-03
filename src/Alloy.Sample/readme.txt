@@ -1,0 +1,1 @@
+Allow to download media folder as ZIP file.
