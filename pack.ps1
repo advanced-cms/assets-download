@@ -6,23 +6,26 @@ $nuget = "$workingDirectory\build\tools\nuget.exe"
 function ZipCurrentModule
 {
     Param ([String]$moduleName)
-	
+
 	$targetDirectory = "..\..\..\..\..\buildoutput\advancedcms-mediadownload"
-	
+
 	New-Item -type Directory -Force -Path $targetDirectory
-	
+
 	$versionOutputDirectory = $targetDirectory + "\" + $version
     Robocopy.exe $defaultVersion\ $versionOutputDirectory\ /S
-	
+
 	$viewsOutputDirectory = $targetDirectory + "\Views"
 	Robocopy.exe "Views" $viewsOutputDirectory\ /S
-	
+
 	Robocopy.exe ".\" $targetDirectory\ "module.config"
 
-    #((Get-Content -Path module.config -Raw).TrimEnd() -Replace $defaultVersion, $version ) | Set-Content -Path module.config
-	
 	Set-Location "$workingDirectory\buildoutput\advancedcms-mediadownload"
-    Start-Process -NoNewWindow -Wait -FilePath $zip -ArgumentList "a", "$moduleName.zip", "$version", "Views", "module.config"
+
+    Write-Host " - updating module.config version to: " $version
+    ((Get-Content -Path module.config -Raw).TrimEnd() -Replace $defaultVersion, $version ) | Set-Content -Path module.config
+
+    Start-Process -NoNewWindow -Wait -FilePath $zip -ArgumentList "a", "$moduleName.zip", "$version", "module.config"
+
     #((Get-Content -Path module.config -Raw).TrimEnd() -Replace $version, $defaultVersion ) | Set-Content -Path module.config
     #Remove-Item $version -Force -Recurse
 }
