@@ -1,4 +1,4 @@
-Advanced.CMS.TimeProperty
+Advanced.CMS.MediaDownload
 
 
 Installation
@@ -23,4 +23,4 @@ public class Startup
 
 or you can just register a new protectedmodule in the appsettings.json
 
-Full documentation can be found here: https://github.com/advanced-cms/time-property
+Full documentation can be found here: https://github.com/advanced-cms/assets-download
