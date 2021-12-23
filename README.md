@@ -15,6 +15,10 @@ Editor can select multiple folders and download it as one package.
 
 ![Assets download multi select](assets/documentation/assets_download_multi_select.png "Preview unpublished content")
 
+## Installation
+
+Install from the Optimizely nuget feed:
+https://nuget.optimizely.com/package/?id=Advanced.CMS.MediaDownload
 
 **caution** | 
 ------------ | 
