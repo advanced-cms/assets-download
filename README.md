@@ -1,5 +1,9 @@
 ![Advanced CMS](assets/logo.png "Advanced CMS")
 
+>> This is about .NET CORE 5 version. If you are interested about .NET FRAMEWORK 4 please visit https://github.com/advanced-cms/assets-download/blob/net4_master/README.md
+
+[![Build .net core](https://github.com/advanced-cms/assets-download/actions/workflows/media-download-dotnet-core.yml/badge.svg)](https://github.com/advanced-cms/assets-download/actions/workflows/media-download-dotnet-core.yml)
+
 # Assets download
 
 Episerver 11+ extension that allows to download folder with media files as ZIP.
