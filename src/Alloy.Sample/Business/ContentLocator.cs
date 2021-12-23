@@ -6,11 +6,13 @@ using Alloy.Sample.Models.Pages;
 using EPiServer;
 using EPiServer.Core;
 using EPiServer.Filters;
+using EPiServer.ServiceLocation;
 using EPiServer.Shell.Configuration;
 using EPiServer.Web;
 
 namespace Alloy.Sample.Business
 {
+    [ServiceConfiguration(Lifecycle = ServiceInstanceScope.Singleton)]
     public class ContentLocator
     {
         private readonly IContentLoader _contentLoader;
@@ -67,7 +69,7 @@ namespace Alloy.Sample.Business
         private IEnumerable<PageData> FindPagesByPageTypeRecursively(PageReference pageLink, int pageTypeId)
         {
             var criteria = new PropertyCriteriaCollection
-                                {
+                               {
                                     new PropertyCriteria
                                     {
                                         Name = "PageTypeID",
@@ -75,7 +77,7 @@ namespace Alloy.Sample.Business
                                         Condition = CompareCondition.Equal,
                                         Value = pageTypeId.ToString(CultureInfo.InvariantCulture)
                                     }
-                                };
+                               };
 
             // Include content providers serving content beneath the page link specified for the search
             if (_providerManager.ProviderMap.CustomProvidersExist)

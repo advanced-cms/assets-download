@@ -1,14 +1,14 @@
-using System.Web.Mvc;
-using Alloy.Sample.Models.Pages;
+﻿using Alloy.Sample.Models.Pages;
 using Alloy.Sample.Models.ViewModels;
 using EPiServer.Web;
 using EPiServer.Web.Mvc;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Alloy.Sample.Controllers
 {
     public class StartPageController : PageControllerBase<StartPage>
     {
-        public ActionResult Index(StartPage currentPage)
+        public IActionResult Index(StartPage currentPage)
         {
             var model = PageViewModel.Create(currentPage);
 

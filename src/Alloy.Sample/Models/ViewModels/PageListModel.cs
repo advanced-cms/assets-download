@@ -1,6 +1,6 @@
-using System.Collections.Generic;
-using EPiServer.Core;
+﻿using System.Collections.Generic;
 using Alloy.Sample.Models.Blocks;
+using EPiServer.Core;
 
 namespace Alloy.Sample.Models.ViewModels
 {

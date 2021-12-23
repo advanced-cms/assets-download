@@ -1,10 +1,9 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using EPiServer.Core;
 using EPiServer.Filters;
 using EPiServer.Framework.Web;
 using EPiServer.ServiceLocation;
-using EPiServer;
 
 namespace Alloy.Sample.Business
 {
@@ -25,7 +24,7 @@ namespace Alloy.Sample.Business
             if (requirePageTemplate)
             {
                 var templateFilter = ServiceLocator.Current.GetInstance<FilterTemplate>();
-                templateFilter.TemplateTypeCategories = TemplateTypeCategories.Page;
+                templateFilter.TemplateTypeCategories = TemplateTypeCategories.Request;
                 contents = contents.Where(x => !templateFilter.ShouldFilter(x));
             }
             if (requireVisibleInMenu)

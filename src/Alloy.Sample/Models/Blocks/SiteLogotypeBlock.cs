@@ -1,9 +1,9 @@
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
+using EPiServer;
 using EPiServer.Core;
 using EPiServer.DataAnnotations;
 using EPiServer.Shell.ObjectEditing;
 using EPiServer.Web;
-using EPiServer;
 
 namespace Alloy.Sample.Models.Blocks
 {
@@ -29,8 +29,8 @@ namespace Alloy.Sample.Models.Blocks
                 var url = this.GetPropertyValue(b => b.Url);
 
                 return url == null || url.IsEmpty()
-                            ? new Url("/Static/gfx/logotype.png")
-                            : url;
+                           ? new Url("/gfx/logotype.png")
+                           : url;
             }
             set
             {

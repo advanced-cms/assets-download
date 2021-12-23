@@ -1,4 +1,4 @@
-namespace Alloy.Sample.Business.Rendering
+﻿namespace Alloy.Sample.Business.Rendering
 {
     /// <summary>
     /// Defines a property for CSS class(es) which will be added to the class

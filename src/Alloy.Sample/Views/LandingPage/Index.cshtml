@@ -1,5 +1,5 @@
-@using Alloy.Sample
-@model PageViewModel<LandingPage>
+﻿@using Alloy.Sample
+@model Alloy.Sample.Models.ViewModels.PageViewModel<Alloy.Sample.Models.Pages.LandingPage>
 <div class="campaign-wrapper">
     @Html.PropertyFor(x => x.CurrentPage.MainContentArea, new { CssClass = "row equal-height", tag = Global.ContentAreaTags.FullWidth })
 </div>

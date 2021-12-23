@@ -1,6 +1,5 @@
-using EPiServer.Editor;
+﻿using Alloy.Sample.Models.Pages;
 using EPiServer.Shell;
-using Alloy.Sample.Models.Pages;
 
 namespace Alloy.Sample.Business.UIDescriptors
 {

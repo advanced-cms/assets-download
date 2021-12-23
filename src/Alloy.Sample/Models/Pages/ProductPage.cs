@@ -4,7 +4,6 @@ using Alloy.Sample.Models.Blocks;
 using EPiServer.Core;
 using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
-using Alloy.Sample.Models.Properties;
 
 namespace Alloy.Sample.Models.Pages
 {

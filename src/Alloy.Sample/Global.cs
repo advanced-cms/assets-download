@@ -1,6 +1,6 @@
-using EPiServer.DataAnnotations;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using EPiServer.DataAnnotations;
 
 namespace Alloy.Sample
 {
@@ -80,8 +80,9 @@ namespace Alloy.Sample
         }
 
         /// <summary>
-        /// Virtual path to folder with static graphics, such as "~/Static/gfx/"
+        /// Virtual path to folder with static graphics, such as "/gfx/"
         /// </summary>
-        public const string StaticGraphicsFolderPath = "~/Static/gfx/";
+        public const string StaticGraphicsFolderPath = "/gfx/";
     }
 }
+

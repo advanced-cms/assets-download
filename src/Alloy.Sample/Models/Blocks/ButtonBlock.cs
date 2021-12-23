@@ -1,6 +1,6 @@
-using System.ComponentModel.DataAnnotations;
-using EPiServer.DataAbstraction;
+﻿using System.ComponentModel.DataAnnotations;
 using EPiServer;
+using EPiServer.DataAbstraction;
 
 namespace Alloy.Sample.Models.Blocks
 {

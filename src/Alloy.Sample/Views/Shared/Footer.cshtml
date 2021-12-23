@@ -1,4 +1,4 @@
-@model IPageViewModel<SitePageData>
+@model Alloy.Sample.Models.ViewModels.IPageViewModel<Alloy.Sample.Models.Pages.SitePageData>
 <div class="row">
     <div class="span12 footer">
         <hr />
@@ -22,13 +22,13 @@
                     <li>
                         @if(Model.Layout.LoggedIn)
                         {
-                            @Html.ActionLink(Html.Translate("/footer/logout"), "Logout", new { language = @Model.CurrentPage.Language.Name })
+                            @Html.ContentLink(LocalizationService.Current.GetString("/footer/logout"), "Logout")
                         }
                         else
                         {
                             if (!Model.Layout.IsInReadonlyMode)
                             {
-                            <a href="@Model.Layout.LoginUrl" title="@Html.Translate("/footer/login")">@Html.Translate("/footer/login")</a>
+                                <a href="@Model.Layout.LoginUrl" title="@Html.Translate("/footer/login")">@Html.Translate("/footer/login")</a>
                             }
                         }
                     </li>

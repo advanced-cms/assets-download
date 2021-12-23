@@ -1,4 +1,4 @@
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using EPiServer.Core;
 using EPiServer.DataAnnotations;
 using EPiServer.Framework.DataAnnotations;
@@ -20,5 +20,5 @@ namespace Alloy.Sample.Models.Media
         /// </summary>
         [UIHint(UIHint.Image)]
         public virtual ContentReference PreviewImage { get; set; }
-    }
+   }
 }

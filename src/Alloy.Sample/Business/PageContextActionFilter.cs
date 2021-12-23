@@ -1,7 +1,8 @@
-using System.Web.Mvc;
 using Alloy.Sample.Models.Pages;
 using Alloy.Sample.Models.ViewModels;
 using EPiServer.Web.Routing;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Filters;
 
 namespace Alloy.Sample.Business
 {
@@ -24,14 +25,15 @@ namespace Alloy.Sample.Business
 
         public void OnResultExecuting(ResultExecutingContext filterContext)
         {
-            var viewModel = filterContext.Controller.ViewData.Model;
+            var controller = filterContext.Controller as Controller;
+            var viewModel = controller?.ViewData.Model;
 
             var model = viewModel as IPageViewModel<SitePageData>;
             if (model != null)
             {
-                var currentContentLink = filterContext.RequestContext.GetContentLink();
+                var currentContentLink = filterContext.HttpContext.GetContentLink();
 
-                var layoutModel = model.Layout ?? _contextFactory.CreateLayoutModel(currentContentLink, filterContext.RequestContext);
+                var layoutModel = model.Layout ?? _contextFactory.CreateLayoutModel(currentContentLink, filterContext.HttpContext);
 
                 var layoutController = filterContext.Controller as IModifyLayout;
                 if(layoutController != null)

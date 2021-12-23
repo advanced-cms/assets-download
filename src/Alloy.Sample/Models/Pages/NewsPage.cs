@@ -1,10 +1,10 @@
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
+using Alloy.Sample.Business;
+using Alloy.Sample.Models.Blocks;
 using EPiServer.DataAbstraction;
 using EPiServer.Filters;
 using EPiServer.Framework.Localization;
 using EPiServer.ServiceLocation;
-using Alloy.Sample.Business;
-using Alloy.Sample.Models.Blocks;
 
 namespace Alloy.Sample.Models.Pages
 {

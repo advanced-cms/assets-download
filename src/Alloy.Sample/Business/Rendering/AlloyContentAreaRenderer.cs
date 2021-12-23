@@ -1,11 +1,9 @@
 using System;
-using System.Web.Mvc;
+using EPiServer;
 using EPiServer.Core;
 using EPiServer.Core.Html.StringParsing;
-using EPiServer.Web;
-using EPiServer.Web.Mvc;
 using EPiServer.Web.Mvc.Html;
-using EPiServer;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Alloy.Sample.Business.Rendering
 {
@@ -14,7 +12,7 @@ namespace Alloy.Sample.Business.Rendering
     /// </summary>
     public class AlloyContentAreaRenderer : ContentAreaRenderer
     {
-        protected override string GetContentAreaItemCssClass(HtmlHelper htmlHelper, ContentAreaItem contentAreaItem)
+        protected override string GetContentAreaItemCssClass(IHtmlHelper htmlHelper, ContentAreaItem contentAreaItem)
         {
             var baseItemClass = base.GetContentAreaItemCssClass(htmlHelper, contentAreaItem);
 

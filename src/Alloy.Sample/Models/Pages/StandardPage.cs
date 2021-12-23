@@ -1,7 +1,7 @@
+﻿using System.ComponentModel.DataAnnotations;
 using EPiServer.Core;
 using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
-using System.ComponentModel.DataAnnotations;
 
 namespace Alloy.Sample.Models.Pages
 {

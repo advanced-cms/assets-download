@@ -1,4 +1,4 @@
-namespace Alloy.Sample.Models.Pages
+﻿namespace Alloy.Sample.Models.Pages
 {
     /// <summary>
     /// Used primarily for publishing news articles on the website

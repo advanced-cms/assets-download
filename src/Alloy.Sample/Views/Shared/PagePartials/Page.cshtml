@@ -1,5 +1,6 @@
-@using EPiServer.Core
-@model SitePageData
+﻿@using EPiServer.Core
+@using Alloy.Sample.Helpers
+@model Alloy.Sample.Models.Pages.SitePageData
 
 <div class="border">
     @using(Html.BeginConditionalLink(Model.HasTemplate(), Url.PageLinkUrl(Model), Model.PageName))

@@ -1,7 +1,7 @@
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using Alloy.Sample.Business.Rendering;
-using EPiServer.Web;
 using EPiServer.Core;
+using EPiServer.Web;
 
 namespace Alloy.Sample.Models.Pages
 {

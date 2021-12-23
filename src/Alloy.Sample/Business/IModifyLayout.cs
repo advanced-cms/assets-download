@@ -1,4 +1,4 @@
-using Alloy.Sample.Models.ViewModels;
+﻿using Alloy.Sample.Models.ViewModels;
 
 namespace Alloy.Sample.Business
 {

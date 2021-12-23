@@ -1,4 +1,4 @@
-
+﻿
 namespace Alloy.Sample.Models.Blocks
 {
     /// <summary>

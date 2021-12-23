@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Advanced.CMS.MediaDownload</id>
+    <version>$PackageVersion$</version>
+    <title>Advanced.CMS.MediaDownload</title>
+    <authors>github.com/advanced-cms</authors>
+    <owners>github.com/advanced-cms</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Episerver extension that allows to download media from folder as zip file</description>
+    <releaseNotes/>
+    <copyright>Copyright 2022</copyright>
+    <tags>episerver media download zip</tags>
+    <license type="expression">MIT</license>
+    <icon>logo.png</icon>
+    <projectUrl>https://github.com/advanced-cms/assets-download</projectUrl>
+    <dependencies>
+      <group targetFramework="net5.0">
+        <dependency id="EPiServer.CMS.UI.Core" version="[$CmsUIVersion$, $CmsUINextMajorVersion$)" />
+      </group>
+    </dependencies>
+    <contentFiles>
+      <files include="any/any/modules/_protected/advanced-cms-media-download/advanced-cms-media-download.zip" buildAction="None" copyToOutput="true"  />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="src\Advanced.CMS.MediaDownload\bin\$configuration$\Advanced.CMS.MediaDownload.dll" target="lib\net5.0\" />
+
+    <file src="out\advanced-cms-media-download\advanced-cms-media-download.zip" target="contentFiles\any\any\modules\_protected\advanced-cms-media-download\" />
+
+    <file src="build\CopyZipFiles.targets" target="build\net5.0\Advanced.CMS.MediaDownload.targets" />
+    <file src="src\Advanced.CMS.MediaDownload\readme.txt" target="" />
+    <file src="assets\logo.png" target="" />
+  </files>
+</package>

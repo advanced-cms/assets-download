@@ -1,8 +1,8 @@
-using System.Web;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using Alloy.Sample.Models.Pages;
-using EPiServer.Web;
 using EPiServer.Core;
+using EPiServer.Web;
+using Microsoft.AspNetCore.Html;
 
 namespace Alloy.Sample.Models.ViewModels
 {
@@ -12,7 +12,7 @@ namespace Alloy.Sample.Models.ViewModels
         public ContentReference Image { get; set; }
         public string Heading { get; set; }
         public string LinkText { get; set; }
-        public IHtmlString LinkUrl { get; set; }
+        public IHtmlContent LinkUrl { get; set; }
         public bool ShowLink { get; set; }
         public ContactPage ContactPage { get; set; }
     }
