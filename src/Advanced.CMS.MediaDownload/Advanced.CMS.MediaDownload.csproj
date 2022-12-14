@@ -2,11 +2,11 @@
   <Import Project="..\..\build\common.props" />
   <Import Project="..\..\build\nuspec.props" />
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <OutputType>Library</OutputType>
-    <NuspecFile>Advanced.CMS.MediaDownload.nuspec</NuspecFile>    
+    <NuspecFile>Advanced.CMS.MediaDownload.nuspec</NuspecFile>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="EPiServer.CMS.UI.Core" />    
-  </ItemGroup>  
+    <PackageReference Include="EPiServer.CMS.UI.Core" />
+  </ItemGroup>
 </Project>

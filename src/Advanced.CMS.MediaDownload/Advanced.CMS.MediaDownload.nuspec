@@ -15,7 +15,7 @@
     <icon>logo.png</icon>
     <projectUrl>https://github.com/advanced-cms/assets-download</projectUrl>
     <dependencies>
-      <group targetFramework="net5.0">
+      <group targetFramework="net6.0">
         <dependency id="EPiServer.CMS.UI.Core" version="[$CmsUIVersion$, $CmsUINextMajorVersion$)" />
       </group>
     </dependencies>
@@ -24,11 +24,11 @@
     </contentFiles>
   </metadata>
   <files>
-    <file src="src\Advanced.CMS.MediaDownload\bin\$configuration$\Advanced.CMS.MediaDownload.dll" target="lib\net5.0\" />
+    <file src="src\Advanced.CMS.MediaDownload\bin\$configuration$\Advanced.CMS.MediaDownload.dll" target="lib\net6.0\" />
 
     <file src="out\advanced-cms-media-download\advanced-cms-media-download.zip" target="contentFiles\any\any\modules\_protected\advanced-cms-media-download\" />
 
-    <file src="build\CopyZipFiles.targets" target="build\net5.0\Advanced.CMS.MediaDownload.targets" />
+    <file src="build\CopyZipFiles.targets" target="build\net6.0\Advanced.CMS.MediaDownload.targets" />
     <file src="src\Advanced.CMS.MediaDownload\readme.txt" target="" />
     <file src="assets\logo.png" target="" />
   </files>
